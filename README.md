@@ -9,7 +9,8 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 
 ## Les exercice
 
-dsfljsqdfljsgqfsf
-sqdlfjhqsdlfjqsldkfhqsd
+- [Les fondamentaux](https://codepen.io/djeg/pen/RwBQJRO)
 
-qsdfkqshdlfkqh
+## Les corrections
+
+- [Les fondamentaux](https://codepen.io/djeg/pen/VwBQGQQ)
