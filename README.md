@@ -1,7 +1,10 @@
 # Formation Javascript - Initiation et DOM
 
-Ce repository contient les supports de la formation javascript et DOM
+Ce repository contient les supports de la formation javascript et DOM pour la sessions du 23/01/23 au 27/01/23 :).
 
-## Les sessions :
+## Plan du cours
 
-- [Session du 23/01/23 au 07/01/23]()
+- [Présentaiton de javascript](./assets/cours/presentation.md)
+- [Les fondamentaux : Variables, Opérateurs et Types](./assets/cours/fondamentaux.md)
+
+## Les exercices
