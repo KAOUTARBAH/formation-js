@@ -128,7 +128,7 @@ amis" // Erreur impossible de faire plusieurs ligne !
 ```
 
 ```js
-;`Coucou
+`Coucou
 les
 amis` // Fonctionne très bien !
 ```
@@ -168,10 +168,10 @@ undefined // undefined
 Il éxiste un petit opérateur : `?` permettant de choisir la valeur non null ou undefined d'un couple :
 
 ```js
-null ? "coucou" // "coucou"
-undefined ? "salut" // "salut"
-"coucou" ? null // "coucou"
-"salut" ? undefined // "salut"
+null ?? 'coucou' // "coucou"
+undefined ?? 'salut' // "salut"
+'coucou' ?? null // "coucou"
+'salut' ?? undefined // "salut"
 ```
 
 ## Les prioriétés
@@ -182,13 +182,6 @@ Il est possible de définir des opérations plus ou moins prioritaire sur d'autr
 1 + 3 - 4 // 0
 1 + (3 - 4) // 0
 2 * 3 + 5 // 11
-5 +
-  2 *
-    3(
-      // 11
-
-      true || false,
-    ) && true // true
 true || (false && true) // true
 ```
 
@@ -199,9 +192,9 @@ Les array (tableaux) représente une liste de valeur. Il est possible de regroup
 Pour délimiter un tableaux on utilise `[]`, ce tableaux peut contenir les valeurs de notre choix, ces dernières doivent simplement être séparé par une `,` :
 
 ```js
-;[10, 12, 9, 20][('coucou', true, 123, 'les amis')][
-  ('salut', true, 125454, 'les amis')
-]
+[10, 12, 9, 20]
+['coucou', true, 123, 'les amis']
+['salut', true, 125454, 'les amis']
 ```
 
 Les array (tableaux) sont des liste numéroté. C'est à dire que chaque élément de la liste possède une position dans la liste que l'on appel un `index`. Cependant, en informatique on commence à compté à partir de `0`
@@ -209,15 +202,15 @@ Les array (tableaux) sont des liste numéroté. C'est à dire que chaque éléme
 Nous pouvons demander un éléments à une position données d'un tableaux :
 
 ```js
-;[10, 12, 9, 20][2][('coucou', true, 123, 'les amis')][3][ // 9 // "les amis"
-  ('coucou', true, 123, 'les amis')
-][10] // undefined
+[10, 12, 9, 20][2] // 9
+['coucou', true, 123, 'les amis'][3] // Les amis
+['coucou', true, 123, 'les amis'][10] // undefined
 ```
 
 Nous pouvons aussi connaitre la taille d'une liste :
 
 ```js
-;[10, 11, 9, 20].length // 4
+[10, 11, 9, 20].length // 4
 ```
 
 > Le point et length doivent être attaché ! C'est une propriété.
@@ -354,13 +347,9 @@ const age = 25
 const nomComplet = nom + ' ' + prenom // concatenation
 const nomComplet2 = `${nom} ${prenom}` // interpolation !
 
-'Bonjour ' +
-  nom +
-  ' ' +
-  prenom +
-  ', vous avez ' +
-  age +
-  ' ans'`Bonjour ${nom} ${prenom}, vous aves ${age} ans` // interpolation
+'Bonjour ' + nom + ' ' + prenom + ', vous avez ' + age + ' ans'
+
+`Bonjour ${nom} ${prenom}, vous aves ${age} ans` // interpolation
 ```
 
 ### Destructuration et Restructuration
@@ -415,8 +404,79 @@ const inscrit = {
 
 const eleve = {
   notes: [12, 15, 16],
-  classe: '3eme 6'
+  classe: '3eme 6',
 }
 
 const eleveFinal = { ...inscrit, ...eleve } // {nom: ..., prenom: ..., notes: ...n, classe: ...}
+```
+
+## Quelques petits bonus et règles à suivre
+
+### Le nommage : camel case
+
+Lorsque l'on doit nommer des variables, des clefs d'objets, on utilise le camel case : Ça consiste à écrire plusieurs mot spéaré par des majuscules :
+
+```js
+const monPrenom = 'Jean'
+const maPremierNote = 15
+```
+
+Attention, nous ne mettons pas de majuscule au début !
+
+```js
+const eleve = {
+  sonNom: 'Dupont',
+  sonPrenom: 'Jean',
+}
+```
+
+### L'indentation
+
+Il est très important pour la lisibilité de respécter ce qu'on appel l'indentation. C'est à dire, d'utiliser une tabulation pour symboliser un « niveaux » :
+
+```js
+// Sans indentation (mauvaise pratique)
+const eleve = {
+sonNom: 'Dupont',
+         sonPrenom: 'Jean'
+}
+
+// Avec indentation
+const eleve = {
+  sonNom: 'Dupont',
+  sonPrenom: 'Jean'
+}
+```
+
+Les indentations utilisent la touche tabulation, attention à bien respécter le bon niveau !
+
+En javascript, généralement les tabulation ou indentation correspondent à 2 éspaces (certains langage en utilise plutôt 4)
+
+### Les commentaires
+
+Il est possible de « commenter » son code, se sont des lignes qui sont ignoré par le compilateur javascript qui servent simplement à documenter / expliquer votre code :
+
+```js
+// Voici un commentaire javascript sur une seule ligne
+
+/*
+Voici
+un commentaire javascript
+sur 
+plusieurs ligne
+*/
+
+/**
+ * Voici une documentation
+ * Ce petit commentaire peut être
+ * « extrait » pour créer des sites internet
+ * documentant automatiquement votre code.
+ * 
+ * Attention, ils doivent se mettre au dessus d'une
+ * « déclaration »
+ * 
+ * Ici l'objectif est de fournir de la documentation
+ * sur la constante age
+ */
+const age = 56
 ```
