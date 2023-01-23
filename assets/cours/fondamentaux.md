@@ -1,10 +1,10 @@
 # Les fondamentaux : Variables, Opérateurs et Types
 
-En javascript, comme tout les langages de programmation, il éxiste 3 notions fondamentales : Types, Opérateurs et variables
+En javascript, comme tout les langages de programmation, il existe 3 notions fondamentales : Types, Opérateurs et variables
 
 ## Les Types
 
-Un « type », c'est comme une grosse famille contenant certaines données. Parmis ces familles et éxiste 2 branches :
+Un « type », c'est comme une grosse famille contenant certaines données. Parmi ces familles et existe 2 branches :
 
 ### les types primitifs
 
@@ -24,7 +24,7 @@ Voici les différentes primitif :
 
 ## Les numbers
 
-Représente l'intégralité des nombres immaginable :
+Représente l'intégralité des nombres imaginable :
 
 ```js
 125 // Nombre 125
@@ -36,31 +36,31 @@ Représente l'intégralité des nombres immaginable :
 
 > **Pour faire un nombre négatif il est obligatoire de « coller » le signe moins au nombre**
 
-Il éxiste 2 `number` un peu particulier :
+Il existe 2 `number` un peu particulier :
 
 1. L'infinie : `Infinite` (`-Inifinite`)
 2. Un opération qui échoue : `NaN` (`Not A Number`), c'est le nombre retourné lorsque l'on fait une division par `0`.
 
-### Les oopérateurs sur les nombres :
+### Les opérateurs sur les nombres :
 
 On peut réaliser des opérations sur les nombres :
 
 ```js
 52 + 12 // Addition
 12 - 5 // soustraction
-12 * 2 // Mutliplication
+12 * 2 // Multiplication
 53 / 2 // Division
 53 % 3 // Reste d'une division euclidienne
 10 ** 2 // Puissance
 10++ // Incrémentation avec retour initiale (Ajoute 1 à 10, 10 + 1)
-++10 // Incrémentation avex retour finale (Ajoute 1 à 10)
-10-- // Décrémentation avec retour initiale (Enléve 1 à 10, 10 - 1)
---10 // Décrementation avec retour finale (Enléve 1 à 10)
+++10 // Incrémentation avec retour finale (Ajoute 1 à 10)
+10-- // Décrémentation avec retour initiale (Enlève 1 à 10, 10 - 1)
+--10 // Décrémentation avec retour finale (Enlève 1 à 10)
 ```
 
 ## Les booleans
 
-Les « booleans », sont inventé par un mathématicien Anglais : « James Bool ». C'est une algébre basé sur 2 valeurs : Le vrai et le faux. C'est les fondations de l'informatique !
+Les « booleans », sont inventé par un mathématicien Anglais : « James Bool ». C'est une algèbre basé sur 2 valeurs : Le vrai et le faux. C'est les fondations de l'informatique !
 
 En informatique, certaines données peuvent « vrai » ou « fausse » :
 
@@ -91,7 +91,7 @@ false || false // OU (faux)
 
 ### Les opérateurs de comparaisons
 
-Les opérateurs de comparaisons permettent de comparéer des données entre elle :
+Les opérateurs de comparaisons permettent de comparées des données entre elle :
 
 ```js
 10 > 12 // Supérieur (false)
@@ -133,7 +133,7 @@ les
 amis` // Fonctionne très bien !
 ```
 
-### Egalité vs Identité
+### Égalité vs Identité
 
 Attention, nous avons vue 2 opérateurs de comparaison : l'égalité (`==`) et l'identité (`===`) :
 
@@ -144,11 +144,11 @@ Attention, nous avons vue 2 opérateurs de comparaison : l'égalité (`==`) et l
 
 ### Les opérateurs sur les string
 
-Il est possible « d'assembler » plusieurs texte ensemble, de les réunir. On appel ce phénoméne : `concaténation`
+Il est possible « d'assembler » plusieurs texte ensemble, de les réunir. On appel ce phénomène : `concaténation`
 
 ```js
 'Coucou' + ' les amis' // 'Coucou les amis'
-'Coucou' + 'les amis' // "Coucoules amis"
+'Coucou' + 'les amis' // "Coucou les amis"
 'Coucou' + ' ' + 'les amis' // 'Coucou les amis'
 ```
 
@@ -163,7 +163,7 @@ null // null
 undefined // undefined
 ```
 
-### La coerscion
+### La coercion
 
 Il éxiste un petit opérateur : `?` permettant de choisir la valeur non null ou undefined d'un couple :
 
@@ -174,7 +174,7 @@ undefined ?? 'salut' // "salut"
 'salut' ?? undefined // "salut"
 ```
 
-## Les prioriétés
+## Les priorités
 
 Il est possible de définir des opérations plus ou moins prioritaire sur d'autre, pour cela, comme en mathématique, on utilise les `()` :
 
@@ -207,7 +207,7 @@ Nous pouvons demander un éléments à une position données d'un tableaux :
 ['coucou', true, 123, 'les amis'][10] // undefined
 ```
 
-Nous pouvons aussi connaitre la taille d'une liste :
+Nous pouvons aussi connaître la taille d'une liste :
 
 ```js
 [10, 11, 9, 20].length // 4
@@ -217,7 +217,7 @@ Nous pouvons aussi connaitre la taille d'une liste :
 
 ## Les objets
 
-Les objets, ce sont des dictionnaires à valeur. On peut y ranger des mots (des clefs `keys`) auquels on attache des définitions (valeurs `value`). Ces objets sont délimité par `{}`
+Les objets, ce sont des dictionnaires à valeur. On peut y ranger des mots (des clefs `keys`) auquel on attache des définitions (valeurs `value`). Ces objets sont délimité par `{}`
 
 Chaque clef et valeurs (`keys: value`) sont séparé par le caractère `:`.
 
@@ -230,7 +230,7 @@ Chaque clef et valeurs (`keys: value`) sont séparé par le caractère `:`.
 }
 ```
 
-Pour accéder à une définission (une valeur), on utilise le `.` et le nom de sa clefs :
+Pour accéder à une définissions (une valeur), on utilise le `.` et le nom de sa clefs :
 
 ```js
 {
@@ -252,7 +252,7 @@ On peut aussi utiliser une syntaxe alternative, similaire à celle des tableaux 
 }['age'] // 25
 ```
 
-Attention, il éxiste des règles bien spécifique pour les clefs de nos objets. Nous ne pouvons pas mettre de caractères spéciaux :
+Attention, il existe des règles bien spécifique pour les clefs de nos objets. Nous ne pouvons pas mettre de caractères spéciaux :
 
 ```js
 {
@@ -278,13 +278,13 @@ Les variables se sont des petits identifiants contenant des valeurs que notre or
 
 Le phénomène d'enregistrer cet identifiant et cette valeur est nommé la **déclaration**.
 
-Une fois la déclaration efféctué, nous pouvons utiliser la valeur contenue dans cette variable en utilisant son identifiant. L'ordinateur se souviendra de ce qu'il contient :
+Une fois la déclaration effectué, nous pouvons utiliser la valeur contenue dans cette variable en utilisant son identifiant. L'ordinateur se souviendra de ce qu'il contient :
 
 ### Le déclaration
 
 Javascript est une langage qui a beaucoup évolué, nous avons 3 façons différentes de déclarer des variables :
 
-- En utilisant le mot clefs `var` : Permet de déclarer une variable, mais hèlas souffre de gros problèmes de performance. Il est aujourd'hui presque « bannie » de votre code.
+- En utilisant le mot clefs `var` : Permet de déclarer une variable, mais hélas souffre de gros problèmes de performance. Il est aujourd’hui presque « bannie » de votre code.
 - En utilisant le mot clefs `let` : Permet de déclarer une variable mais cette fois bien plus optimisé !
 - En utilisant le mot clefs `const` : Permet de déclarer une variable qui ne peut être changé !
 
@@ -333,7 +333,7 @@ eleve.notes[eleve.notes.length - 1] // 14
 eleve.profPrincipal.age // 52
 ```
 
-### Inperpollation
+### Interpolation
 
 Lorsqu'on utilise des chaînes de caractères, il est possible d'utiliser une autre technique que la `concatenation` pour les assembler, c'est : `L'interpolation` :
 
@@ -414,7 +414,7 @@ const eleveFinal = { ...inscrit, ...eleve } // {nom: ..., prenom: ..., notes: ..
 
 ### Le nommage : camel case
 
-Lorsque l'on doit nommer des variables, des clefs d'objets, on utilise le camel case : Ça consiste à écrire plusieurs mot spéaré par des majuscules :
+Lorsque l'on doit nommer des variables, des clefs d'objets, on utilise le camel case : Ça consiste à écrire plusieurs mot séparé par des majuscules :
 
 ```js
 const monPrenom = 'Jean'
@@ -432,7 +432,7 @@ const eleve = {
 
 ### L'indentation
 
-Il est très important pour la lisibilité de respécter ce qu'on appel l'indentation. C'est à dire, d'utiliser une tabulation pour symboliser un « niveaux » :
+Il est très important pour la lisibilité de respecter ce qu'on appel l'indentation. C'est à dire, d'utiliser une tabulation pour symboliser un « niveaux » :
 
 ```js
 // Sans indentation (mauvaise pratique)
@@ -448,9 +448,9 @@ const eleve = {
 }
 ```
 
-Les indentations utilisent la touche tabulation, attention à bien respécter le bon niveau !
+Les indentations utilisent la touche tabulation, attention à bien respecter le bon niveau !
 
-En javascript, généralement les tabulation ou indentation correspondent à 2 éspaces (certains langage en utilise plutôt 4)
+En javascript, généralement les tabulation ou indentation correspondent à 2 espaces (certains langage en utilise plutôt 4)
 
 ### Les commentaires
 
