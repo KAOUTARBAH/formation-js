@@ -7,4 +7,9 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Présentaiton de javascript](./assets/cours/presentation.md)
 - [Les fondamentaux : Variables, Opérateurs et Types](./assets/cours/fondamentaux.md)
 
-## Les exercices
+## Les exercice
+
+dsfljsqdfljsgqfsf
+sqdlfjhqsdlfjqsldkfhqsd
+
+qsdfkqshdlfkqh
