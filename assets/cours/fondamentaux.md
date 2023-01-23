@@ -173,3 +173,250 @@ undefined ? "salut" // "salut"
 "coucou" ? null // "coucou"
 "salut" ? undefined // "salut"
 ```
+
+## Les prioriétés
+
+Il est possible de définir des opérations plus ou moins prioritaire sur d'autre, pour cela, comme en mathématique, on utilise les `()` :
+
+```js
+1 + 3 - 4 // 0
+1 + (3 - 4) // 0
+2 * 3 + 5 // 11
+5 +
+  2 *
+    3(
+      // 11
+
+      true || false,
+    ) && true // true
+true || (false && true) // true
+```
+
+## Les array
+
+Les array (tableaux) représente une liste de valeur. Il est possible de regroupé des données dans une liste numéroté, ce sont les tableaux (array).
+
+Pour délimiter un tableaux on utilise `[]`, ce tableaux peut contenir les valeurs de notre choix, ces dernières doivent simplement être séparé par une `,` :
+
+```js
+;[10, 12, 9, 20][('coucou', true, 123, 'les amis')][
+  ('salut', true, 125454, 'les amis')
+]
+```
+
+Les array (tableaux) sont des liste numéroté. C'est à dire que chaque élément de la liste possède une position dans la liste que l'on appel un `index`. Cependant, en informatique on commence à compté à partir de `0`
+
+Nous pouvons demander un éléments à une position données d'un tableaux :
+
+```js
+;[10, 12, 9, 20][2][('coucou', true, 123, 'les amis')][3][ // 9 // "les amis"
+  ('coucou', true, 123, 'les amis')
+][10] // undefined
+```
+
+Nous pouvons aussi connaitre la taille d'une liste :
+
+```js
+;[10, 11, 9, 20].length // 4
+```
+
+> Le point et length doivent être attaché ! C'est une propriété.
+
+## Les objets
+
+Les objets, ce sont des dictionnaires à valeur. On peut y ranger des mots (des clefs `keys`) auquels on attache des définitions (valeurs `value`). Ces objets sont délimité par `{}`
+
+Chaque clef et valeurs (`keys: value`) sont séparé par le caractère `:`.
+
+```js
+{
+  nom: 'Dupont',
+  prenom: 'Jean',
+  age: 25,
+  notes: [12, 8, 10, 8]
+}
+```
+
+Pour accéder à une définission (une valeur), on utilise le `.` et le nom de sa clefs :
+
+```js
+{
+  nom: 'Dupont',
+  prenom: 'Jean',
+  age: 25,
+  notes: [12, 8, 10, 8]
+}.age // 25
+```
+
+On peut aussi utiliser une syntaxe alternative, similaire à celle des tableaux :
+
+```js
+{
+  nom: 'Dupont',
+  prenom: 'Jean',
+  age: 25,
+  notes: [12, 8, 10, 8]
+}['age'] // 25
+```
+
+Attention, il éxiste des règles bien spécifique pour les clefs de nos objets. Nous ne pouvons pas mettre de caractères spéciaux :
+
+```js
+{
+  prénom: 'Jean' // NON, Erreur le é est un caractère spéciale !
+}
+```
+
+On ne met que des chiffres ou des lettres !
+
+### Les clefs dynamique
+
+Il est possible de créer des clefs avec des chaînes de caractères. Dans ce cas, nous pouvons mettre des caractères spéciaux :
+
+```js
+{
+  "prénom": 'Jean' // Valide !
+}['prénom']
+```
+
+## Les variables
+
+Les variables se sont des petits identifiants contenant des valeurs que notre ordinateur enregistre en mémoire.
+
+Le phénomène d'enregistrer cet identifiant et cette valeur est nommé la **déclaration**.
+
+Une fois la déclaration efféctué, nous pouvons utiliser la valeur contenue dans cette variable en utilisant son identifiant. L'ordinateur se souviendra de ce qu'il contient :
+
+### Le déclaration
+
+Javascript est une langage qui a beaucoup évolué, nous avons 3 façons différentes de déclarer des variables :
+
+- En utilisant le mot clefs `var` : Permet de déclarer une variable, mais hèlas souffre de gros problèmes de performance. Il est aujourd'hui presque « bannie » de votre code.
+- En utilisant le mot clefs `let` : Permet de déclarer une variable mais cette fois bien plus optimisé !
+- En utilisant le mot clefs `const` : Permet de déclarer une variable qui ne peut être changé !
+
+### Exemple
+
+```js
+var nom = 'Dupont' // Non, ici on utilise var
+let prenom = 'Jean' // Préféré
+const age = 23 // Le plus souvent
+
+age = 56 // Erreur ! J'ai une constante elle ne peux pas changer
+prenom = 'Gerome' // Ça passe, je n'ai pas de constante
+
+// Plein de ligne de codes ....
+
+nom + ' ' + prenom // "Dupont Jean"
+
+14 + age // 37
+
+const notes = [12, 9, 17, 20]
+
+// Plus tard dans le code ...
+notes.length // 4
+notes[2] // 17
+notes[3] // 20
+notes[notes.length - 1] // 20
+
+const eleve = {
+  nom: 'Dupont',
+  prenom: 'Jean',
+  age: 32,
+  notes: [12, 8, 16, 14],
+  profPrincipal: {
+    nom: 'Dupont',
+    prenom: 'Jeanne',
+    age: 52,
+  },
+}
+
+// Plus tard dans le code
+
+eleve.nom + ' ' + eleve.prenom // 'Dupont Jean'
+eleve.notes[3] // 14
+eleve.notes[eleve.notes.length - 1] // 14
+
+eleve.profPrincipal.age // 52
+```
+
+### Inperpollation
+
+Lorsqu'on utilise des chaînes de caractères, il est possible d'utiliser une autre technique que la `concatenation` pour les assembler, c'est : `L'interpolation` :
+
+Pour faire une interpolation, il faut tout d'abord utiliser les backtick : ``et placer les variables entre`${}`
+
+```js
+const nom = 'Dupont'
+const prenom = 'Jean'
+const age = 25
+
+const nomComplet = nom + ' ' + prenom // concatenation
+const nomComplet2 = `${nom} ${prenom}` // interpolation !
+
+'Bonjour ' +
+  nom +
+  ' ' +
+  prenom +
+  ', vous avez ' +
+  age +
+  ' ans'`Bonjour ${nom} ${prenom}, vous aves ${age} ans` // interpolation
+```
+
+### Destructuration et Restructuration
+
+Lorsque l'on travail avec des objets, ou des tableaux, nous pouvons utiliser une technique très puissante pour extraire son contenue : **les destructuration**
+
+```js
+const notes = [12, 8, 9, 5]
+
+const premierNote = notes[0] // Valide, 12
+
+const [premierNote2] = notes // Même principe, mais en destructurant
+
+premierNote2 // 12
+
+const [firstNote, secondNote, ...restDesNotes] = notes
+
+firstNote // 12
+secondNote // 8
+restDesNotes // [9, 5]
+```
+
+Ça marche aussi avec les objets
+
+```js
+const eleve = {
+  nom: 'Dupont',
+  prenom: 'Jean',
+  age: 25,
+}
+
+const { nom, prenom } = eleve
+
+nom // "Dupont"
+prenom // "Jean"
+```
+
+Il est possible de « fusionner » des tableaux et des objets en utilisant la **restructuration** :
+
+```js
+const notes = [12, 14, 5]
+const notes2 = [8, 18, 16]
+
+// J'utilise la restructuration pour assembler les 2 tableaux
+const notes3 = [...notes, ...notes2] // [12, 14, 5, 8, 18, 16]
+const notes3 = [notes, notes2] // [[12, 14, 5], [8, 18, 16]]
+
+const inscrit = {
+  nom: 'Dupont',
+  prenom: 'Jean',
+}
+
+const eleve = {
+  notes: [12, 15, 16],
+  classe: '3eme 6'
+}
+
+const eleveFinal = { ...inscrit, ...eleve } // {nom: ..., prenom: ..., notes: ...n, classe: ...}
+```
