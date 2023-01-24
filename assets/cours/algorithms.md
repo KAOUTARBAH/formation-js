@@ -181,3 +181,62 @@ while (true) {
   break
 }
 ```
+
+Il existe aussi la possibilité de « sauter » une itération de boucle en utilisant e mot clef `continue` :
+
+```js
+let compteur = 0
+
+while (compteur < 50) {
+  compteur += 1
+
+  if (compteur % 2 === 0) {
+    continue
+  }
+
+  console.log(`Compteur est impair : ${compteur}`)
+}
+```
+
+```js
+let compteur = 0
+
+while (compteur < 50) {
+  compteur += 1
+
+  if (compteur % 2 === 0) {
+    continue
+  } else {
+    console.log(`Compteur est impair : ${compteur}`)
+  }
+}
+```
+
+## Les boucles de parcours
+
+Les boucles de parcours on la responsabilité de boucler sur tout les éléments d'une liste (array). Différemment du while, les boucles de parcours n'ont pas de conditions, elle se lance sur chaque élément d'une liste.
+
+Pour faire une boucle de parcours on utilise 2 formes :
+
+- `for` ... `in` : Boucle sur tout les positions (index) d'une liste (array)
+- `for` ... `of` : Boucle sur toutes les valeurs d'une liste (array)
+
+### Exemple
+
+```js
+const notes = [12, 8, 9, 18, 17]
+
+// Boucle sur les positions du tableaux
+for (let index in notes) {
+  // Ici, index prendra à chaque tour de boucle
+  // la position de l’élément du tableaux
+  console.log(`La note n°${index} est ${notes[index]}`)
+}
+
+// Boucle sur les valeurs du tableaux
+for (let note of notes) {
+  // Ici, note prendra à chaque tour de boucle
+  // la valeur de l'élément du tableaux
+  console.log(`Note ${note}`)
+}
+```
