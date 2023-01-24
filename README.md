@@ -7,10 +7,13 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Présentaiton de javascript](./assets/cours/presentation.md)
 - [Les fondamentaux : Variables, Opérateurs et Types](./assets/cours/fondamentaux.md)
 - [Les algorithmes](./assets/cours/algorithms.md)
+- [Les fonctions](./assets/cours/functions.md)
 
 ## Les exercice
 
 - [Les fondamentaux](https://codepen.io/djeg/pen/RwBQJRO)
+- [La calculatrice](https://codepen.io/djeg/pen/abjYWvL?editors=0012)
+- [Traitement des notes](https://codepen.io/djeg/pen/zYLWwBd?editors=0012)
 
 ## Les corrections
 
