@@ -129,3 +129,46 @@ p.setAttribute('class', 'big-text super-red')
 // Je peut supprimer l'attribut class
 p.removeAttribute('class')
 ```
+
+## Jouer et manipuler l'attribut class
+
+Il éxiste dans un `DOMElement` un autre objet nommé la `ClassList`. Cet objet nous permet de manipuler l'attribut class de notre élément plus facilement :
+
+Pour accéder à cet objet `ClassList` nous utilisons `element.classList` et nous pouvons réaliser les opération suivante :
+
+```js
+// Je séléctionne le premier paragraph
+const p = document.querySelector('p')
+j
+// Je souhaiterais savoir si mon paragraph possède la class super-gros
+p.classList.has('super-gros') // true si super-gros est dans la class
+p.classList.remove('super-gros') // on supprime la class super-gros
+p.classList.replace('super-gros', 'super-petit') // on remplace une class css
+p.classList.toggle('super-gros') // Si super-gros éxiste on enléve sinon on ajoute
+p.classList.add('super-rouge') // Ajoute la class super-rouge
+```
+
+## Quelques signatures
+
+```ts
+document : Document
+document.querySelector(selector: string): DOMElement | null
+document.querySelectorAll(selector: string): DOMElement[]
+
+DOMElement.nextElementSibling : DOMElement | null
+DOMElement.previousElementSibling : DOMElement | null
+DOMElement.children : DOMElement[]
+
+DOMElement.hasAttribute(name: string): boolean
+DOMElement.getAttribute(name: string): string | null
+DOMElement.setAttribute(name: string, value: string): void
+DOMElement.removeAttribute(name: string): void
+
+DOMElement.classList : ClassList
+
+DOMElement.classList.has(cssClass: string): boolean
+DOMElement.classList.remove(cssClass: string): void
+DOMElement.classList.replace(cssClass: string, cssClassReplacement: string): void
+DOMElement.classList.toggle(cssClass: string): void
+DOMElement.classList.add(cssClass: string): void
+```

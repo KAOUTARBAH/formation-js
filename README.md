@@ -10,6 +10,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Les fonctions](./assets/cours/functions.md)
 - [DOM : Présentation](./assets/cours/dom-presentation.md)
 - [DOM : Parcourir un document](./assets/cours/dom-parcoure.md)
+- [DOM : Modifier le document](./assets/cours/dom-modify.md)
 
 ## Les exercice
 
