@@ -81,8 +81,12 @@ div.append(img)
 div.prepend(img)
 
 // Permet d'ajouter l'image dans plein d'endroit à la fois :
-dov.insertAdjacentElement(img, 'beforebegin') // Juste avant
-dov.insertAdjacentElement(img, 'afterbegin') // Au début des enfant
-dov.insertAdjacentElement(img, 'beforeend') // À la find des enfant
-dov.insertAdjacentElement(img, 'afterend') // Juste après
+div.insertAdjacentElement('beforebegin', img) // Juste avant
+div.insertAdjacentElement('afterbegin', img) // Au début des enfant
+div.insertAdjacentElement('beforeend', img) // À la find des enfant
+div.insertAdjacentElement(
+  'afterend',
+  img,
+) // Juste après
+``
 ```

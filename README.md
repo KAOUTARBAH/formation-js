@@ -11,6 +11,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [DOM : Présentation](./assets/cours/dom-presentation.md)
 - [DOM : Parcourir un document](./assets/cours/dom-parcoure.md)
 - [DOM : Modifier le document](./assets/cours/dom-modify.md)
+- [DOM : Les événements](./assets/cours/dom-events.md)
 
 ## Les exercice
 
@@ -24,3 +25,4 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Les fondamentaux](https://codepen.io/djeg/pen/VwBQGQQ)
 - [La calculatrice](https://codepen.io/djeg/pen/poZLPqw)
 - [Traitement des notes](https://codepen.io/djeg/pen/JjBLNwe)
+- [DOM : Manipuler le dom](https://codepen.io/djeg/pen/VwBxyQb?editors=0010)
