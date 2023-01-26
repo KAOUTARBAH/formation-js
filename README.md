@@ -19,6 +19,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [La calculatrice](https://codepen.io/djeg/pen/abjYWvL?editors=0012)
 - [Traitement des notes](https://codepen.io/djeg/pen/zYLWwBd?editors=0012)
 - [DOM : Manipuler le DOM](https://codepen.io/djeg/pen/vYjJOvv?editors=0010)
+- [La liste de chose à faire](https://codepen.io/djeg/pen/GRdvJea?editors=0010)
 
 ## Les corrections
 
