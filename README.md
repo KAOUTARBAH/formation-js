@@ -13,6 +13,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [DOM : Modifier le document](./assets/cours/dom-modify.md)
 - [DOM : Les événements](./assets/cours/dom-events.md)
 - [DOM : La Window](./assets/cours/dom-window.md)
+- [JS : Asynchrone](./assets/cours/async.md)
 
 ## Les exercice
 
@@ -32,3 +33,4 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [DOM : Manipuler le dom](https://codepen.io/djeg/pen/VwBxyQb?editors=0010)
 - [La liste de chose à faire](https://codepen.io/djeg/pen/oNMdMdK?editors=0011)
 - [Interaction début de jeux](https://codepen.io/djeg/pen/VwBdjKR?editors=0011)
+- [Le Pong](https://codepen.io/djeg/pen/jOppQYr)
