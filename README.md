@@ -24,6 +24,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [La liste de chose à faire](https://codepen.io/djeg/pen/GRdvJea?editors=0010)
 - [Interaction début de jeux](https://codepen.io/djeg/pen/vYjJQVY?editors=0010)
 - [Le Pong](https://codepen.io/djeg/pen/YzLxgdK)
+- [Le restaurant italien](https://codepen.io/djeg/pen/MWBBMvJ?editors=0012)
 
 ## Les corrections
 
