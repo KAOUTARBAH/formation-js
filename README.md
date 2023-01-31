@@ -15,6 +15,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [DOM : La Window](./assets/cours/dom-window.md)
 - [JS : Asynchrone](./assets/cours/async.md)
 - [Le web : protocole HTTP(S)](./assets/cours/web.md)
+- [JS : Fetch](./assets/cours/fetch.md)
 
 ## Les exercice
 
