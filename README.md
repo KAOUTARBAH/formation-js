@@ -27,6 +27,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Interaction début de jeux](https://codepen.io/djeg/pen/vYjJQVY?editors=0010)
 - [Le Pong](https://codepen.io/djeg/pen/YzLxgdK)
 - [Le restaurant italien](https://codepen.io/djeg/pen/MWBBMvJ?editors=0012)
+- [Le caroussel de dog](https://codepen.io/djeg/pen/xxJyEPQ?editors=0010)
 
 ## Les corrections
 
