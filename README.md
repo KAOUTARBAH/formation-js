@@ -17,6 +17,8 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Le web : protocole HTTP(S)](./assets/cours/web.md)
 - [JS : Fetch](./assets/cours/fetch.md)
 - [Le Terminal](./assets/cours/terminal.md)
+- [NodeJS et NPM](./assets/cours/node.md)
+- [Les modules & Bundler](./assets/cours/modules.md)
 
 ## Les exercice
 
