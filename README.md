@@ -16,6 +16,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [JS : Asynchrone](./assets/cours/async.md)
 - [Le web : protocole HTTP(S)](./assets/cours/web.md)
 - [JS : Fetch](./assets/cours/fetch.md)
+- [Le Terminal](./assets/cours/terminal.md)
 
 ## Les exercice
 
@@ -39,3 +40,4 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Interaction début de jeux](https://codepen.io/djeg/pen/VwBdjKR?editors=0011)
 - [Le Pong](https://codepen.io/djeg/pen/jOppQYr)
 - [Les restaurant italien](https://codepen.io/djeg/pen/yLqRBGd?editors=0012)
+- [Le carousel de dog](https://codepen.io/djeg/pen/PoBxwOo?editors=0010)
