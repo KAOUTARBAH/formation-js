@@ -50,3 +50,117 @@ Il faut pour utiliser parcel, lancer la commande suivante :
 ```bash
 $ npx parcel index.html
 ```
+
+> Très important, lorsqu'on lance la commande `npx parcel index.html` on lance un serveur ! C'est à dire que notre terminal n'est plus disponible. Je dois appuyer sur les touches `CTRL-C`.
+
+## Ajouter du javascript
+
+Pour ajouter un fichier javascript rien de plus simple :
+
+```js
+// src/index.js
+console.log('Coucou javascript')
+```
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon Site</title>
+  </head>
+  <body>
+    <h1>Coucou les amis</h1>
+    <script type="module" src="src/index.js">
+  </body>
+</html>
+```
+
+## Séparer son code en module
+
+Sur une véritable application web, nous n'avons pas qu'un seul fichier javascript. Il est possible de séparer son code en plusieurs fichier javascript. Chaque fichier javascript est ce que l'on appel un **module**.
+
+Dans un module nous pouvons choisir d'exporter certains membres (de les rendre accessible aux autres fichiers). Toujours dans un module nous pouvons importer d'aures membres d'autre fichier.
+
+On utilise pour cela les mot clefs `import` et `export`
+
+### Exemple :
+
+```js
+// src/fichier1.js
+
+// Nous exportons la fonction pour d'autre fichier javascript !
+export function additionner(x, y) {
+  return x + y
+}
+```
+
+```js
+// src/index.js
+
+// Je peux importer ma fonction additionner
+import { additionner } from './monfichier1'
+
+console.log(additionner(3, 4))
+```
+
+> De base tout ce que vous écrivez dans un fichier est **privée**, c'est à dire que c'est uniquement disponible pour le fichier
+
+Les `export` marchent avec les fonctions mais aussi avec les constantes et les variables :
+
+```js
+// src/fichier1.js
+
+export const PI = 3.14
+
+// Nous exportons la fonction pour d'autre fichier javascript !
+export function additionner(x, y) {
+  return x + y
+}
+```
+
+```js
+// src/index.js
+
+// Je peux importer ma fonction additionner
+import { additionner, PI } from './monfichier1'
+
+console.log(additionner(3, 4))
+console.log(PI)
+```
+
+### Les `import` et `export` par défaut
+
+Il éxiste un autre type d'export et d'import, c'est celui par défaut.
+
+#### Exemple :
+
+```js
+// calcule.js
+export default function calculer(x, y) {
+  return x + y
+}
+```
+
+```js
+// index.js
+import calculer from 'calculer'
+
+console.log(calculer(12, 5))
+```
+
+> Nous ne pouvons faire qu'un seul export par défaut. Il est déconseillé d'utilisé les export par défaut à moins que ce soit l'unique export d'un fichier.
+
+### Installer et importer des librairies
+
+Lorsque l'on lance la commande `npm i react`, nous installons la librairie react. Cette librairies c'est elle aussi un module !
+
+Nous pouvons donc utiliser `import` pour l'importer :
+
+```js
+import { createRoot } from 'react-dom'
+
+createRoot(document.querySelector('.container'))
+
+// etc
+```
