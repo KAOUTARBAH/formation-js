@@ -164,3 +164,31 @@ createRoot(document.querySelector('.container'))
 
 // etc
 ```
+
+## Bonnes pratique
+
+### VSCode
+
+Lorsqu'on developpe en javascript, html, css etc ... Lorsque l'on fais une application web il est conseillé d'avoir une bonne éditeur de code. Le plus utilisé aujourd'hui est [VSCode](https://code.visualstudio.com/)
+
+VSCode à la particularité de comprendre html, css et javascript nativement. C'est un éditeur très intelligent qui vous faira gagner beaucoup de temps.
+
+> D'ailleurs VSCode lui même est developpé en javascript !
+
+### L'organisation
+
+Dans un projet utilisant javascript, tout nos fichier `.js` doivent être ranger dans un dossier `src` (source), à l'exception des librairies qui elle se range dans `node_modules`.
+
+### Formatteur de code
+
+Il est très important et essentiel de bien formatter son code. De bien répécter les espaces, d'être toujours cohérent, de bien indenter son code ...
+
+Heureusement il éxiste des formatteur automatique, le plus célébre : [prettier](https://prettier.io/)
+
+### Documenter votre code !
+
+Un point essentiel pour trouver son premier emploie en tant que développeur c'est la documentation. On vous embauchera bien plus facilement si votre code contient des commentaires expliquant la démarche et le fonctionnement des différents membre.
+
+### Pas de `dead code`
+
+**ATTENTION** : Ne jamais commenter du code ! Le code soit on le laisse comme tel, soit on le supprime.
