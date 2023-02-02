@@ -20,7 +20,6 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [NodeJS et NPM](./assets/cours/node.md)
 - [Les modules & Bundler](./assets/cours/modules.md)
 
-
 ## Les exercice
 
 - [Les fondamentaux](https://codepen.io/djeg/pen/RwBQJRO)
@@ -32,6 +31,7 @@ Ce repository contient les supports de la formation javascript et DOM pour la se
 - [Le Pong](https://codepen.io/djeg/pen/YzLxgdK)
 - [Le restaurant italien](https://codepen.io/djeg/pen/MWBBMvJ?editors=0012)
 - [Le caroussel de dog](https://codepen.io/djeg/pen/xxJyEPQ?editors=0010)
+- [Exercice Final : Moteur de recherche de coktail](./assets/exos/cocktail-search.md)
 
 ## Les corrections
 
