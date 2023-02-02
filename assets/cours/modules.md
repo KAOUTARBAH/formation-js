@@ -26,7 +26,12 @@ Dans un projet javascript (un dossier avec un `package.json`) installer parcel :
 $ npm i parcel
 ```
 
-> Dans certain cas, il vous faut installer python : https://www.python.org/ftp/python/3.11.1/python-3.11.1-amd64.exe et visual studio : https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&workload=dotnet-dotnetwebcloud&passive=false#dotnet
+> pour certains utilisateurs windows il vous faudra installer tout le dev kit :
+>
+> - Python : https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5?hl=en-us&gl=us
+> - Build Tools : https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools
+> - Visual Studio : https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community
+> - lancer la commande dans un terminal : `npm config set msvs_version 2017`
 
 ### Utiliser parcel
 
