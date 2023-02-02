@@ -33,6 +33,11 @@ $ npm i parcel
 > - Visual Studio : https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community
 > - lancer la commande dans un terminal : `npm config set msvs_version 2017`
 
+> Si le problème persiste vous pouvez aussi désinstaller node et essayer avec un version plus ancienne de nodejs :
+>
+> - Version 16 : https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi
+> - Version 14 : https://nodejs.org/dist/v14.19.0/node-v14.19.0-x64.msi
+
 ### Utiliser parcel
 
 Pour utiliser parcel il faut tout d'abord une page html :
